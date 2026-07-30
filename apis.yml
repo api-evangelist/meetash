@@ -1,7 +1,33 @@
 aid: meetash
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/meetash.png
 name: MeetAsh
-description: MeetAsh is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ash (MeetAsh / Ash Wellness) is a New York-based health technology company,
+  founded in 2019, that powers white-label at-home health testing programs for
+  health plans, digital health companies, and public health organizations.
+  Through a single, developer-friendly REST API integration, partners can
+  trigger test kits, manage shipping logistics, and securely transmit results
+  back into an EHR or patient portal across a national network of CLIA- and
+  CAP-certified laboratories. Ash offers 120+ at-home diagnostic panels
+  (hormone, cancer, allergy, STI, chronic condition, and infectious-disease
+  testing with self-collected blood, stool, urine, saliva, and swab samples),
+  care-gap-closure programs for HEDIS measures, kitting and fulfillment,
+  physician-of-record services, and real-time reporting dashboards. The
+  platform is fully HIPAA compliant and SOC 2 Type II certified, with
+  enterprise-grade encryption protecting PHI. Surfaced as a 500 Global
+  portfolio company and enriched into the API Evangelist network; the developer
+  documentation is partner-gated (password protected).
 url: https://raw.githubusercontent.com/api-evangelist/meetash/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +37,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Health
+- Healthcare
+- Diagnostics
+- At-Home Testing
+- Lab Testing
+- Digital Health
+- Telehealth
+- HIPAA
+- API
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +56,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/meetash-domain-security.yml
 - type: Website
-  url: https://poweredbyash.com
+  url: https://www.poweredbyash.com
+- type: Documentation
+  url: https://docs.ashwellness.io
+- type: Blog
+  url: https://www.poweredbyash.com/blog
+- type: Support
+  url: https://www.poweredbyash.com/contact-us
+- type: TermsOfService
+  url: https://www.poweredbyash.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.poweredbyash.com/privacy-policy
+- type: TrustCenter
+  url: https://trust.poweredbyash.com
+- type: Compliance
+  url: https://trust.poweredbyash.com
+- type: Conformance
+  url: conformance/meetash-conformance.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
