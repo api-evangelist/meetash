@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://trust.poweredbyash.com (live, HTTP 200) plus compliance wording on
+  https://www.poweredbyash.com/frequently-asked-questions. The trust center is
+  a JavaScript-rendered page, so the automated keyword probe did not record it;
+  this entry is a manual, verified capture.
+url: https://trust.poweredbyash.com
+certifications:
+- HIPAA
+- SOC 2 Type II
+- CLIA
+- CAP
+evidence:
+- source: https://trust.poweredbyash.com
+  kind: trust-center
+  note: dedicated trust.poweredbyash.com subdomain returns HTTP 200
+- source: https://www.poweredbyash.com/frequently-asked-questions
+  keywords:
+  - hipaa
+  - soc 2 type ii
+  - clia
+  - cap
+  - enterprise-grade encryption
