@@ -37,7 +37,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-08-15'
 tags:
 - Company
 - Health
@@ -76,8 +76,34 @@ common:
   url: https://trust.poweredbyash.com
 - type: Conformance
   url: conformance/meetash-conformance.yml
+- type: Lifecycle
+  url: lifecycle/meetash-lifecycle.yml
+- type: StatusPage
+  url: https://status.ashwellness.io
+- type: LLMsTxt
+  url: llms/meetash-llms.txt
 x-enrichment:
-  date: '2026-07-20'
-  status: enriched
-  artifacts_added: 3
+  date: '2026-08-15'
+  status: minimal
+  artifacts_added: 6
   pass: local-v1
+x-coverage:
+  state: gated
+  reason: partner-login
+  detail: >-
+    Ash markets a "developer-friendly REST API" on its FAQ and platform pages,
+    but its entire developer surface — docs.ashwellness.io, a ReadMe hub — is in
+    password-protected mode: every path 302s to /password?redirect=<path> and
+    the host's robots.txt is "User-agent: * / Disallow: /", so no reference, no
+    OpenAPI, no auth page and no rate-limit or pricing detail is publicly
+    readable and the only way in is the contact-sales form.
+  evidence:
+  - url: https://docs.ashwellness.io/
+    status: 302
+  - url: https://docs.ashwellness.io/reference
+    status: 302
+  - url: https://docs.ashwellness.io/robots.txt
+    status: 200
+  - url: https://www.poweredbyash.com/frequently-asked-questions
+    status: 200
+  checked: '2026-08-15'
