@@ -1,0 +1,84 @@
+# MeetAsh (Ash / Ash Wellness)
+
+> Ash is a New York-based health technology company, founded in 2019, that powers
+> white-label at-home health testing programs for health plans, digital health
+> companies, and public health organizations. A single REST API integration lets a
+> partner trigger test kits, manage shipping logistics, and transmit results back
+> into an EHR or patient portal across a national network of CLIA- and CAP-certified
+> laboratories. Ash offers 120+ at-home diagnostic panels (hormone, cancer, allergy,
+> STI, chronic condition and infectious disease, from self-collected blood, stool,
+> urine, saliva and swab samples), care-gap-closure programs for HEDIS measures,
+> kitting and fulfillment, physician-of-record services, and reporting dashboards.
+> The platform is HIPAA compliant and SOC 2 Type II certified.
+
+## Status of the developer surface
+
+Ash markets a REST API but does not publish it. The developer documentation at
+https://docs.ashwellness.io is a ReadMe hub in password-protected mode: every path
+302s to /password, and its robots.txt is "User-agent: * / Disallow: /". No OpenAPI,
+AsyncAPI, GraphQL SDL, Postman collection, MCP server, or agent card is published at
+any public Ash URL, and no first-party SDK exists in npm, PyPI, or a public GitHub
+organization. Access to the contract requires a partner conversation via
+https://www.poweredbyash.com/contact-us.
+
+## Company
+
+- [Ash — home](https://www.poweredbyash.com): company site, products, and who Ash serves.
+- [The Ash platform](https://www.poweredbyash.com/our-platform): the end-to-end at-home testing platform, lab API integration, patient portals, and the real-time reporting portal.
+- [Frequently asked questions](https://www.poweredbyash.com/frequently-asked-questions): the fullest public statement of the API, HIPAA posture, SOC 2 Type II, and CLIA/CAP lab certification.
+- [Lab testing menu](https://www.poweredbyash.com/lab-testing-menu): the diagnostic panels Ash can order.
+- [About Ash](https://www.poweredbyash.com/about-us)
+- [Press](https://www.poweredbyash.com/press)
+
+## Solutions
+
+- [Closing care gaps](https://www.poweredbyash.com/solutions/closing-care-gaps)
+- [Cancer screening](https://www.poweredbyash.com/solutions/cancer-screening)
+- [Chronic conditions](https://www.poweredbyash.com/solutions/chronic-conditions)
+- [Hormonal health](https://www.poweredbyash.com/solutions/hormonal-health)
+- [Infectious disease](https://www.poweredbyash.com/solutions/infectious-disease)
+- [Environmental health](https://www.poweredbyash.com/solutions/environmental-health)
+
+## Who Ash serves
+
+- [Health plans](https://www.poweredbyash.com/who-we-serve/health-plans)
+- [Digital health](https://www.poweredbyash.com/who-we-serve/digital-health)
+- [Public health](https://www.poweredbyash.com/who-we-serve/public-health)
+
+## Developer and operations
+
+- [Developer documentation (password-protected)](https://docs.ashwellness.io): ReadMe hub, partner credentials required.
+- [Status page](https://status.ashwellness.io): live component status and 24h/7d/30d/90d uptime. No machine-readable status feed.
+- [Create an account](https://register.poweredbyash.com/): account registration.
+- [Results portal](https://results.poweredbyash.com/): patient results portal.
+- [Support](https://www.poweredbyash.com/contact-us) and the [help center](https://support.poweredbyash.com/hc/en-us).
+
+## Trust and compliance
+
+- [Trust center](https://trust.poweredbyash.com): HIPAA, SOC 2 Type II.
+- [Terms of use](https://www.poweredbyash.com/terms-of-use)
+- [Privacy policy](https://www.poweredbyash.com/privacy-policy)
+
+## Blog
+
+- [Ash blog](https://www.poweredbyash.com/blog)
+- [Building our own lab testing API](https://www.poweredbyash.com/blog-posts/building-our-own-lab-testing-api)
+- [Why Ash Wellness is building a provider-of-record API](https://www.poweredbyash.com/blog-posts/why-ash-wellness-is-building-a-provider-of-record-api)
+- [Why flexible APIs are the future of healthcare](https://www.poweredbyash.com/blog-posts/why-flexible-apis-are-the-future-of-healthcare)
+
+## API Evangelist profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/meetash/refs/heads/main/apis.yml): the machine-readable profile this file was generated from.
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/meetash/refs/heads/main/conformance/meetash-conformance.yml)
+- [Lifecycle](https://raw.githubusercontent.com/api-evangelist/meetash/refs/heads/main/lifecycle/meetash-lifecycle.yml)
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/meetash/refs/heads/main/well-known/meetash-well-known.yml)
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/meetash/refs/heads/main/security/meetash-domain-security.yml)
+
+<!--
+generated: 2026-08-15
+method: generated
+source: apis.yml + repo artifacts + https://www.poweredbyash.com/sitemap.xml (HTTP 200).
+Ash publishes no /llms.txt: https://www.poweredbyash.com/llms.txt returns HTTP 404 and
+https://docs.ashwellness.io/llms.txt returns the password-page HTML shell, not a document.
+Every link above was observed live on 2026-08-15.
+-->

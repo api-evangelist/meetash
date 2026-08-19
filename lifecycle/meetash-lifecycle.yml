@@ -1,0 +1,41 @@
+generated: '2026-08-15'
+method: searched
+source: >-
+  https://status.ashwellness.io — a real, first-party Ash status page
+  (HTTP 200, <title>Ash Status Page</title>, hosted on UptimeRobot's public
+  status-page product and branded with Ash's own logo asset at
+  psp-logos.uptimerobot.com/logos/3040691_719133_ashlogo_blue.png). Discovered
+  by probing status.* on both company domains; the hostname is also present in
+  Certificate Transparency for ashwellness.io. It is not linked from
+  www.poweredbyash.com or its sitemap.
+status_page: https://status.ashwellness.io
+status_page_evidence:
+  url: https://status.ashwellness.io/
+  http_status: 200
+  title: Ash Status Page
+  provider: UptimeRobot public status page
+  machine_readable_api: none
+  note: >-
+    Statuspage-style /api/v2/summary.json and Instatus-style /summary.json both
+    return 404 on this host; the page renders components and 24h/7d/30d/90d
+    uptime client-side only, so there is no machine-readable status feed.
+versioning:
+  scheme: unknown
+  current: null
+  docs: null
+  note: >-
+    Ash publishes no public versioning policy. The developer documentation at
+    https://docs.ashwellness.io is a ReadMe hub in password-protected mode
+    (302 to /password), so any versioning statement it carries is not publicly
+    readable.
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No public deprecation or sunset policy was found on any Ash property.
+sla:
+  url: null
+  uptime_target: null
+  note: >-
+    No public SLA or uptime commitment is published; the status page shows
+    historical uptime but states no target.
+deprecated_operations: []

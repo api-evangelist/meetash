@@ -1,0 +1,26 @@
+generated: '2026-08-15'
+method: searched
+source: >-
+  Public Ash surface searched on 2026-08-15 for published API rate limits:
+  https://www.poweredbyash.com/frequently-asked-questions (HTTP 200),
+  https://www.poweredbyash.com/our-platform (HTTP 200), the full
+  https://www.poweredbyash.com/sitemap.xml (HTTP 200), and the developer
+  documentation host https://docs.ashwellness.io (HTTP 302 to
+  /password?redirect=/). No limit, window, burst, quota, or rate-limit response
+  header is stated anywhere publicly.
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null
+note: >-
+  Ash documents no rate limits publicly. The FAQ and platform pages describe a
+  "developer-friendly REST API" but state no throughput, quota, or
+  concurrency ceiling, and no X-RateLimit-*/RateLimit-*/Retry-After response
+  header is described. The API reference that would carry them sits behind the
+  password gate on docs.ashwellness.io, so this zero measures the PUBLIC
+  surface: an integrator evaluating Ash cannot learn its limits before signing.
+  Nothing was observed on a live unauthenticated response either — Ash publishes
+  no unauthenticated API endpoint to observe headers on.
+evidence:
+- {url: 'https://www.poweredbyash.com/frequently-asked-questions', status: 200, finding: API described, no limits stated}
+- {url: 'https://docs.ashwellness.io/', status: 302, finding: '302 to /password?redirect=/ — reference not publicly readable'}

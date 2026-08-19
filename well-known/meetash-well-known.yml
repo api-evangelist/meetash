@@ -1,0 +1,51 @@
+generated: '2026-08-15'
+method: probed
+source: >-
+  Live unauthenticated GET of the RFC 8615 /.well-known/ discovery surface on
+  every host named in apis.yml (Website, Documentation, TrustCenter) on
+  2026-08-15. No document was returned by any host. docs.ashwellness.io is a
+  ReadMe hub in password-protected mode and answers HTTP 200 with the same
+  ~13 KB HTML password page for EVERY path, including paths that do not exist,
+  so its 200s are an SPA/catch-all shell and NOT documents. No WellKnown or
+  SecurityTxt pointer is wired in apis.yml, because nothing here is a served
+  document.
+result: no-documents-found
+hosts:
+- host: https://www.poweredbyash.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /.well-known/mcp.json, status: 404}
+- host: https://docs.ashwellness.io
+  note: >-
+    ReadMe hub in password-protected mode. Every request 302s to
+    /password?redirect=<path> and then renders a 200 HTML password page, so a
+    200 here carries no document. robots.txt on this host is "User-agent: *
+    Disallow: /".
+  documents:
+  - {path: /.well-known/security.txt, status: 200, content_type: text/html, document: false, note: password-page HTML shell, not a document}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 200, content_type: text/html, document: false, note: password-page HTML shell, not a document}
+  - {path: /.well-known/agent-card.json, status: 200, content_type: text/html, document: false, note: password-page HTML shell, not a document}
+  - {path: /.well-known/agent.json, status: 200, content_type: text/html, document: false, note: password-page HTML shell, not a document}
+  - {path: /.well-known/mcp.json, status: 200, content_type: text/html, document: false, note: password-page HTML shell, not a document}
+- host: https://trust.poweredbyash.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /.well-known/mcp.json, status: 404}

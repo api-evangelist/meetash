@@ -1,0 +1,23 @@
+generated: '2026-08-15'
+method: searched
+source: >-
+  https://www.poweredbyash.com/sitemap.xml (HTTP 200) walked in full on
+  2026-08-15 — 170 URLs, none of them a pricing, plans, or packages page — plus
+  https://www.poweredbyash.com/our-platform (HTTP 200) and
+  https://www.poweredbyash.com/frequently-asked-questions (HTTP 200), neither of
+  which states a price, a tier, or a quota.
+plan_count: 0
+plans: []
+note: >-
+  Ash publishes no pricing at all. The commercial motion is enterprise
+  contract-only: every conversion path on the site ends at
+  https://www.poweredbyash.com/contact-us ("Talk to us" / "Get in touch"), and
+  the buyers named on the site are health plans, digital-health companies and
+  public-health organizations rather than self-serve developers. There is no
+  free tier, no published per-test or per-kit rate, no API call pricing, and no
+  machine-readable pricing or catalog endpoint. This is a recorded absence, not
+  an unchecked field.
+evidence:
+- {url: 'https://www.poweredbyash.com/sitemap.xml', status: 200, finding: no pricing/plans URL in 170 sitemap entries}
+- {url: 'https://www.poweredbyash.com/our-platform', status: 200, finding: platform description with no price}
+- {url: 'https://www.poweredbyash.com/contact-us', status: 200, finding: contact-sales form is the only commercial entry point}

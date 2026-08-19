@@ -1,0 +1,24 @@
+generated: '2026-08-15'
+method: searched
+source: >-
+  Registry and repository search on 2026-08-15 for a first-party Ash Wellness /
+  MeetAsh client library. npm registry search API (registry.npmjs.org
+  /-/v1/search?text=ashwellness) returned total=0; PyPI
+  https://pypi.org/pypi/ashwellness/json returned HTTP 404; the GitHub user/org
+  search API for "ashwellness" returned total_count=0, so there is no public
+  GitHub organization to hold an SDK. The docs host that would list SDKs
+  (https://docs.ashwellness.io) is password-gated (HTTP 302 to /password), and
+  apis.yml carries no SDK, CLI, or SourceCode link to derive candidates from.
+package_count: 0
+packages: []
+note: >-
+  No first-party SDK or client library was found in any public registry, and Ash
+  operates no public GitHub organization. This is a checked, evidenced zero — not
+  an unchecked field. No `SDKs` pointer is wired in apis.yml, because emitting
+  one would credit Ash with client libraries it does not publish. If Ash ships
+  SDKs to contracted partners they are distributed behind the partner gate and
+  are not observable from the public surface.
+evidence:
+- {registry: npm, query: 'https://registry.npmjs.org/-/v1/search?text=ashwellness', status: 200, total: 0}
+- {registry: pypi, url: 'https://pypi.org/pypi/ashwellness/json', status: 404}
+- {registry: github, url: 'https://api.github.com/search/users?q=ashwellness', status: 200, total_count: 0}
