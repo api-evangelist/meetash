@@ -48,6 +48,16 @@ tags:
 - Digital Health
 - Telehealth
 - HIPAA
+tags_raw:
+- Company
+- Health
+- Healthcare
+- Diagnostics
+- At-Home Testing
+- Lab Testing
+- Digital Health
+- Telehealth
+- HIPAA
 - API
 apis: []
 maintainers:
