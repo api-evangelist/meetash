@@ -64,6 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-MeetAsh is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Ash (MeetAsh / Ash Wellness) is a New York-based health technology company, founded in 2019, that powers white-label at-home health testing programs for health plans, digital health companies, and public health organizations. Through a single, developer-friendly REST API integration, partners can trigger test kits, manage shipping logistics, and securely transmit results back into an EHR or patient portal across a national network of CLIA- and CAP-certified laboratories. Ash offers 120+ at-home diagnostic panels (hormone, cancer, allergy, STI, chronic condition, and infectious-disease testing with self-collected blood, stool, urine, saliva, and swab samples), care-gap-closure programs for HEDIS measures, kitting and fulfillment, physician-of-record services, and real-time reporting dashboards. The platform is fully HIPAA compliant and SOC 2 Type II certified, with enterprise-grade encryption protecting PHI. Surfaced as a 500 Global portfolio company and enriched into the API Evangelist network; the developer documentation is partner-gated (password protected).
 
-Backed by: 500-global — https://poweredbyash.com
+**Areas:** Company · Health · Healthcare · Diagnostics · At-Home Testing · Lab Testing · Digital Health · Telehealth · HIPAA
+
+## MeetAsh on APIs.io
+
+Everything profiled for MeetAsh is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/meetash/](https://apis.io/providers/meetash/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Meetash Domain Security](https://apis.io/security/meetash/meetash-domain-security/)
+- [Meetash Trust Center](https://apis.io/security/meetash/meetash-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Meetash Plans Pricing](https://apis.io/plans/meetash/meetash-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Meetash Rate Limits](https://apis.io/rate-limits/meetash/meetash-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.poweredbyash.com)
+- [Documentation](https://docs.ashwellness.io)
+- [Support](https://www.poweredbyash.com/contact-us)
+- [Blog](https://www.poweredbyash.com/blog)
+- [Compliance](https://trust.poweredbyash.com)
+- [Trust centre](https://trust.poweredbyash.com)
+- [Terms of service](https://www.poweredbyash.com/terms-of-use)
+- [Privacy policy](https://www.poweredbyash.com/privacy-policy)
+- [Status](https://status.ashwellness.io)
+
+## API Evangelist rating
+
+**Kin Score 20.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 36.8 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.8** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/meetash/](https://apis.io/providers/meetash/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for MeetAsh: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/meetash/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
